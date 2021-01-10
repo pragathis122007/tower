@@ -46,6 +46,8 @@ function setup(){
 
     polygon1 = new Polygon(50,250);
     slingshot1 = new SlingShot(polygon1.body,{x:50,y:200});
+
+    Engine.run(engine);
 }
 
 function draw(){
@@ -87,5 +89,7 @@ function mouseDragged(){
 
 
 function mouseReleased(){
-    slingshot1.fly();
+  
+    Matter.Body.setPosition(polygon1.body, {x: 650 , y: 300});
+      slingshot1.fly();
 }
