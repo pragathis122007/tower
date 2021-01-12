@@ -133,7 +133,7 @@ function mouseReleased(){
 
 function keyPressed(){
     if(keyCode === 32){
-     //  Matter.Body.setPosition(polygon1.body, {x: 50 , y: 250});
+      Matter.Body.setPosition(polygon1.body, {x: 50 , y: 250});
      slingshot1.attach(polygon1.body);
     }
 }
